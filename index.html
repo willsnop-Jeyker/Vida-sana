@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vida Sana — Almacén Natural · Gualeguay</title>
+  <meta name="description" content="Vida Sana, tu almacén natural en Gualeguay, Entre Ríos. Gran variedad de productos saludables, dietéticos, veganos y sin gluten. Atención personalizada.">
+  <meta name="keywords" content="almacén natural Gualeguay, productos saludables Gualeguay, dietética Gualeguay, celíacos Gualeguay, vegano Gualeguay">
+
+  <!-- OG Tags para compartir por WhatsApp / Facebook / Instagram -->
+  <meta property="og:title" content="Vida Sana — Almacén Natural · Gualeguay">
+  <meta property="og:description" content="Gran variedad de productos saludables, dietéticos y naturales. Atención personalizada en el corazón de Gualeguay.">
+  <meta property="og:image" content="imagenes/logo.png">
+  <meta property="og:url" content="https://vidasana.com.ar">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vida Sana — Almacén Natural · Gualeguay">
+  <meta name="twitter:description" content="Productos naturales, dietéticos y saludables en Gualeguay, Entre Ríos.">
+  <meta name="twitter:image" content="imagenes/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Nunito:wght@300;400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+/* ===================== VARIABLES ===================== */
+:root {
+  --green:      #8B1A3A;
+  --green2:     #a8234a;
+  --green3:     #c42d5a;
+  --green-lt:   #f5e0e8;
+  --green-pale: #faf0f3;
+  --gold:       #c8862a;
+  --gold2:      #e8a840;
+  --gold-lt:    #fdf3e0;
+  --cream:      #faf7f2;
+  --cream2:     #f5f0e8;
+  --cream3:     #ede5d8;
+  --brown:      #6b4c2a;
+  --brown2:     #8b6840;
+  --white:      #ffffff;
+  --dark:       #2a0d18;
+  --text:       #3e1c28;
+  --muted:      #7c6568;
+  --light:      #ab949a;
+  --border:     #ddd8ce;
+  --border2:    #c8c0b0;
+}
+
+/* ===================== RESET ===================== */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+
+/* Textura de fondo sutil */
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");opacity:.5}
+
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--cream2)}
+::-webkit-scrollbar-thumb{background:var(--green2);border-radius:2px}
+
+/* ===================== PROGRESS BAR ===================== */
+#progress{position:fixed;top:0;left:0;height:3px;width:0%;z-index:9999;background:linear-gradient(90deg,var(--green),var(--gold),var(--green2));box-shadow:0 0 8px rgba(139,26,58,.4)}
+
+/* ===================== HEADER ===================== */
+header{position:fixed;top:0;left:0;right:0;z-index:1000;height:76px;padding:0 clamp(16px,5vw,72px);display:flex;align-items:center;justify-content:space-between;transition:all .35s;border-bottom:1px solid transparent}
+header.scrolled{background:rgba(250,247,242,.97);border-color:var(--border);backdrop-filter:blur(16px);box-shadow:0 2px 24px rgba(139,26,58,.08)}
+.logo{display:flex;align-items:center;gap:12px}
+.logo img{height:48px;width:auto;object-fit:contain;filter:drop-shadow(0 2px 6px rgba(139,26,58,.15))}
+.logo-txt .logo-name{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:var(--green);line-height:1}
+.logo-txt .logo-sub{font-size:.52rem;color:var(--muted);letter-spacing:3px;text-transform:uppercase;font-weight:500}
+nav{display:flex;gap:28px;align-items:center}
+nav a{font-size:.68rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);transition:color .2s;position:relative}
+nav a::after{content:'';position:absolute;bottom:-3px;left:50%;right:50%;height:1.5px;background:var(--green2);transition:all .25s;border-radius:1px}
+nav a:hover{color:var(--green)}
+nav a:hover::after{left:0;right:0}
+.nav-cta{background:linear-gradient(135deg,var(--green),var(--green2));color:white!important;padding:10px 22px;border-radius:50px;box-shadow:0 4px 16px rgba(139,26,58,.3);transition:all .2s!important}
+.nav-cta::after{display:none!important}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 6px 22px rgba(139,26,58,.4)!important}
+.ham{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px}
+.ham span{display:block;width:22px;height:1.5px;background:var(--green);transition:all .3s;border-radius:1px}
+.ham.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.ham.open span:nth-child(2){opacity:0}
+.ham.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+
+/* ===================== MOB NAV ===================== */
+.mob-nav{position:fixed;inset:0;z-index:990;background:rgba(250,247,242,.98);backdrop-filter:blur(20px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;transform:translateY(-100%);transition:transform .45s cubic-bezier(.77,0,.18,1)}
+.mob-nav.open{transform:none}
+.mob-nav a{font-family:'Playfair Display',serif;font-size:2.2rem;color:var(--green);font-style:italic;transition:color .2s}
+.mob-nav a:hover{color:var(--green2)}
+.mob-close{position:absolute;top:22px;right:22px;background:none;border:none;color:var(--muted);font-size:1.2rem;cursor:pointer}
+
+/* ===================== HERO ===================== */
+.hero{min-height:100vh;position:relative;overflow:hidden;display:flex;align-items:center;padding:100px clamp(16px,5vw,72px) 60px}
+.hero-bg{position:absolute;inset:0;z-index:0;background:linear-gradient(160deg,#faf7f2 0%,#f5eaee 35%,#ead4dc 65%,#d4b0be 100%)}
+.hero-blob{position:absolute;pointer-events:none;border-radius:50%;filter:blur(60px)}
+.hb1{width:500px;height:500px;right:-100px;top:-100px;background:radial-gradient(circle,rgba(168,35,74,.15),transparent 70%);animation:blob-drift 12s ease-in-out infinite}
+.hb2{width:400px;height:400px;left:-80px;bottom:-80px;background:radial-gradient(circle,rgba(200,134,42,.12),transparent 70%);animation:blob-drift 15s ease-in-out infinite reverse}
+.hb3{width:300px;height:300px;right:30%;top:20%;background:radial-gradient(circle,rgba(139,26,58,.08),transparent 70%);animation:blob-drift 10s ease-in-out infinite 3s}
+@keyframes blob-drift{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(20px,-15px) scale(1.05)}66%{transform:translate(-10px,20px) scale(.95)}}
+.food-float{position:absolute;font-size:2rem;animation:food-float linear infinite;opacity:0;pointer-events:none;z-index:1}
+@keyframes food-float{0%{transform:translateY(0) rotate(0deg);opacity:0}10%{opacity:.15}90%{opacity:.1}100%{transform:translateY(-100vh) rotate(180deg);opacity:0}}
+.hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(139,26,58,.08);border:1px solid rgba(139,26,58,.15);padding:7px 18px;border-radius:50px;margin-bottom:22px;font-size:.65rem;color:var(--green);letter-spacing:2px;text-transform:uppercase;font-weight:600}
+.hero-badge i{font-size:.6rem}
+h1{font-family:'Playfair Display',serif;font-size:clamp(2.6rem,5vw,4.6rem);font-weight:700;line-height:1.1;color:var(--dark);margin-bottom:10px}
+h1 em{font-style:italic;color:var(--green2)}
+.hero-script{font-family:'Caveat',cursive;font-size:clamp(1.4rem,2.5vw,2rem);color:var(--gold);display:block;margin-bottom:20px}
+.hero-p{color:var(--muted);font-size:.92rem;line-height:1.9;max-width:420px;margin-bottom:32px;font-weight:400}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-green{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,var(--green),var(--green2));color:white;padding:14px 28px;border-radius:50px;font-size:.75rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;transition:all .25s;box-shadow:0 6px 22px rgba(139,26,58,.35)}
+.btn-green:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(139,26,58,.45)}
+.btn-outline{display:inline-flex;align-items:center;gap:9px;background:transparent;color:var(--green);padding:14px 28px;border-radius:50px;border:2px solid var(--green);font-size:.75rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;transition:all .25s}
+.btn-outline:hover{background:var(--green-lt);transform:translateY(-2px)}
+.hero-stats{display:flex;gap:28px;margin-top:32px;padding-top:28px;border-top:1px solid var(--border)}
+.stat-item{text-align:center}
+.stat-n{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--green);line-height:1}
+.stat-l{font-size:.6rem;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;font-weight:600;margin-top:2px}
+
+/* Hero lado derecho — logo */
+.hero-right{position:relative;display:flex;justify-content:center;align-items:center}
+.hero-logo-wrap{position:relative;z-index:2;display:flex;align-items:center;justify-content:center}
+.hero-logo-ring{width:320px;height:320px;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(255,255,255,.92),rgba(245,240,232,.75));display:flex;align-items:center;justify-content:center;box-shadow:0 20px 60px rgba(139,26,58,.2),0 0 0 1px rgba(139,26,58,.1),inset 0 2px 20px rgba(255,255,255,.6);animation:ring-breathe 6s ease-in-out infinite;overflow:hidden}
+.hero-logo-ring img{width:240px;height:240px;object-fit:contain;filter:drop-shadow(0 8px 24px rgba(139,26,58,.18))}
+@keyframes ring-breathe{0%,100%{transform:scale(1);box-shadow:0 20px 60px rgba(139,26,58,.2),0 0 0 1px rgba(139,26,58,.1)}50%{transform:scale(1.03);box-shadow:0 28px 70px rgba(139,26,58,.28),0 0 0 1px rgba(139,26,58,.15)}}
+.orbit{position:absolute;border-radius:50%;border:1px dashed rgba(139,26,58,.15);animation:orbit-spin linear infinite}
+.orbit-1{width:380px;height:380px;animation-duration:30s}
+.orbit-2{width:460px;height:460px;animation-duration:45s;animation-direction:reverse}
+@keyframes orbit-spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.orbit-dot{position:absolute;top:0;left:50%;transform:translate(-50%,-50%);width:8px;height:8px;border-radius:50%;background:var(--green3);opacity:.4}
+.orbit-emoji{position:absolute;font-size:1.2rem;top:0;left:50%;transform:translate(-50%,-50%);opacity:.6}
+
+/* ===================== SECCIONES BASE ===================== */
+.sec{padding:88px clamp(16px,5vw,72px);position:relative;z-index:2}
+.sec-inner{max-width:1200px;margin:0 auto}
+.sec-label{font-family:'Caveat',cursive;font-size:1.2rem;color:var(--gold);margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.sec-label::before{content:'';width:24px;height:1.5px;background:var(--gold);border-radius:1px}
+h2.sh{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:700;color:var(--dark);line-height:1.15;margin-bottom:14px}
+h2.sh em{font-style:italic;color:var(--green2)}
+.sec-p{color:var(--muted);font-size:.9rem;line-height:1.95;max-width:480px;font-weight:400}
+.org-div{position:relative;height:60px;overflow:hidden;z-index:2}
+.org-div svg{width:100%;height:100%}
+
+/* ===================== NOSOTROS ===================== */
+#nosotros{background:white}
+.nos-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;margin-top:52px}
+.nos-img{position:relative}
+.nos-img-main{width:100%;aspect-ratio:4/5;border-radius:30px;overflow:hidden;box-shadow:0 24px 60px rgba(139,26,58,.18)}
+.nos-img-main img{width:100%;height:100%;object-fit:cover}
+.nos-img-ph{width:100%;height:100%;background:linear-gradient(160deg,var(--green-lt),var(--cream3));display:flex;align-items:center;justify-content:center;font-size:8rem}
+.nos-img-card{position:absolute;bottom:-16px;right:-16px;background:white;border-radius:20px;padding:16px 20px;box-shadow:0 8px 28px rgba(139,26,58,.15);border:1px solid var(--border)}
+.nic-icon{font-size:1.5rem;margin-bottom:4px}
+.nic-n{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--green);line-height:1}
+.nic-l{font-size:.6rem;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase}
+.nos-badge{position:absolute;top:20px;left:-16px;background:linear-gradient(135deg,var(--green),var(--green2));color:white;padding:10px 16px;border-radius:14px;box-shadow:0 8px 24px rgba(139,26,58,.35);text-align:center}
+.nb-ico{font-size:1.2rem}
+.nb-txt{font-size:.52rem;letter-spacing:1.5px;text-transform:uppercase;opacity:.9;margin-top:2px}
+.nos-desc{color:var(--muted);font-size:.88rem;line-height:2;margin-bottom:14px;font-weight:400}
+.nos-desc strong{color:var(--text);font-weight:600}
+.nos-features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+.nf{display:flex;align-items:flex-start;gap:10px;background:var(--green-pale);border:1px solid rgba(139,26,58,.1);border-radius:14px;padding:14px}
+.nf-ico{width:32px;height:32px;border-radius:10px;flex-shrink:0;background:linear-gradient(135deg,var(--green-lt),var(--green-pale));display:flex;align-items:center;justify-content:center;font-size:.9rem;border:1px solid rgba(139,26,58,.12)}
+.nf-txt strong{display:block;font-size:.78rem;color:var(--dark);font-weight:600;margin-bottom:2px}
+.nf-txt span{font-size:.7rem;color:var(--muted);line-height:1.5}
+
+/* ===================== PRODUCTOS ===================== */
+#productos{background:var(--cream2)}
+.prod-intro{text-align:center;margin-bottom:48px}
+.prod-intro .sec-label{justify-content:center}
+.prod-intro h2{text-align:center}
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.prod-card{background:white;border-radius:22px;padding:28px 20px;text-align:center;border:1.5px solid var(--border);transition:all .35s;position:relative;overflow:hidden;cursor:pointer}
+.prod-card::before{content:'';position:absolute;inset:0;border-radius:22px;background:linear-gradient(160deg,var(--green-lt),transparent);opacity:0;transition:opacity .3s}
+.prod-card:hover{transform:translateY(-8px);box-shadow:0 20px 50px rgba(139,26,58,.15);border-color:var(--green2)}
+.prod-card:hover::before{opacity:1}
+.prod-ico{font-size:2.8rem;margin-bottom:14px;display:block;filter:drop-shadow(0 4px 8px rgba(139,26,58,.15));transition:transform .3s}
+.prod-card:hover .prod-ico{transform:scale(1.15) rotate(-5deg)}
+.prod-card h3{font-family:'Playfair Display',serif;font-size:1rem;font-weight:600;color:var(--dark);margin-bottom:6px}
+.prod-card p{color:var(--muted);font-size:.75rem;line-height:1.7;font-weight:400}
+.prod-tag{display:inline-flex;align-items:center;gap:4px;margin-top:12px;background:var(--green-pale);padding:4px 12px;border-radius:50px;font-size:.6rem;color:var(--green);font-weight:700;letter-spacing:.5px}
+
+/* ===================== POR QUÉ ELEGIRNOS ===================== */
+#porque{background:white}
+.pq-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:72px;align-items:center;margin-top:52px}
+.pq-cards{display:flex;flex-direction:column;gap:16px}
+.pq-card{display:flex;align-items:flex-start;gap:16px;background:var(--cream);border:1.5px solid var(--border);border-radius:18px;padding:20px;transition:all .3s}
+.pq-card:hover{border-color:var(--green2);background:var(--green-pale);transform:translateX(6px)}
+.pq-ico{width:44px;height:44px;border-radius:14px;flex-shrink:0;background:linear-gradient(135deg,var(--green-lt),rgba(168,35,74,.15));display:flex;align-items:center;justify-content:center;font-size:1.1rem;border:1px solid rgba(139,26,58,.12)}
+.pq-txt h4{font-family:'Playfair Display',serif;font-size:1rem;font-weight:600;color:var(--dark);margin-bottom:4px}
+.pq-txt p{color:var(--muted);font-size:.78rem;line-height:1.7}
+.pq-deco{position:relative;display:flex;align-items:center;justify-content:center}
+.pq-circle{width:380px;height:380px;border-radius:50%;background:radial-gradient(circle at 35% 35%,var(--green-lt),var(--cream2));display:flex;align-items:center;justify-content:center;box-shadow:0 20px 60px rgba(139,26,58,.1),0 0 0 1px rgba(139,26,58,.06)}
+.pq-circle-inner{text-align:center}
+.pq-big-ico{font-size:5rem;display:block;margin-bottom:12px;animation:leaf-sway 4s ease-in-out infinite}
+@keyframes leaf-sway{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+.pq-circle-txt{font-family:'Playfair Display',serif;font-size:1.3rem;font-style:italic;color:var(--green);margin-bottom:4px}
+.pq-circle-sub{font-size:.7rem;color:var(--muted);letter-spacing:2px;text-transform:uppercase}
+
+/* ===================== GALERÍA (con carrusel efecto difuminado) ===================== */
+#galeria{background:var(--cream)}
+.galeria-intro{text-align:center;margin-bottom:48px}
+.galeria-intro .sec-label{justify-content:center}
+.galeria-intro h2{text-align:center}
+.galeria-intro p{text-align:center;margin:8px auto 0}
+
+.galeria-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows:auto;
+  gap:16px;
+}
+.gal-item{
+  border-radius:20px;
+  overflow:hidden;
+  position:relative;
+  cursor:pointer;
+  background:var(--cream3);
+  aspect-ratio:1/1;
+  box-shadow:0 4px 20px rgba(139,26,58,.08);
+  border:1.5px solid var(--border);
+  transition:all .35s cubic-bezier(.22,1,.36,1);
+}
+.gal-item:first-child{
+  grid-column:1 / 3;
+  aspect-ratio:2/1;
+}
+.gal-item:nth-child(6){
+  grid-column:2 / 4;
+  aspect-ratio:2/1;
+}
+.gal-item:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 48px rgba(139,26,58,.18);
+  border-color:var(--green2);
+}
+.gal-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(42,13,24,.5) 0%,transparent 60%);
+  opacity:0;
+  transition:opacity .3s;
+  display:flex;align-items:flex-end;padding:18px;
+  pointer-events:none;
+  z-index:2;
+}
+.gal-item:hover .gal-overlay{opacity:1}
+.gal-overlay span{
+  color:white;font-size:.72rem;font-weight:700;
+  letter-spacing:1.5px;text-transform:uppercase;
+  font-family:'Nunito',sans-serif;
+}
+
+/* Carrusel dentro de cada card */
+.gal-carousel {
+  position: relative;
+  overflow: hidden;
+}
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity .7s ease-in-out, transform .7s ease-in-out, filter .7s ease-in-out;
+}
+/* Efecto difuminado al cambiar imagen */
+.carousel-img.blur-transition {
+  filter: blur(4px);
+  transform: scale(1.01);
+  opacity: .95;
+}
+.carousel-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  z-index: 5;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.gal-item:hover .carousel-dots {
+  opacity: 1;
+}
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.6);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.carousel-dot.active {
+  background: var(--green2);
+  width: 20px;
+  border-radius: 4px;
+}
+
+/* Placeholder mientras no hay imagen */
+.gal-ph{
+  width:100%;height:100%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:10px;
+  background:linear-gradient(160deg,var(--green-lt),var(--cream2));
+  color:var(--green2);
+}
+.gal-ph span{font-size:2.5rem}
+.gal-ph p{font-size:.7rem;color:var(--muted);letter-spacing:1px;text-transform:uppercase;font-weight:600}
+
+/* CTA galería */
+.galeria-cta{text-align:center;margin-top:36px}
+
+/* ===================== TESTIMONIOS ===================== */
+#testimonios{background:var(--cream2)}
+.testi-intro{text-align:center;margin-bottom:48px}
+.testi-intro .sec-label{justify-content:center}
+.testi-track-wrap{overflow:hidden;position:relative}
+.testi-track{display:flex;gap:20px;transition:transform .5s cubic-bezier(.22,1,.36,1)}
+.testi-card{flex:0 0 calc(33.333% - 14px);background:white;border-radius:22px;padding:28px;border:1.5px solid var(--border);position:relative;overflow:hidden}
+.testi-card::before{content:'"';position:absolute;top:-10px;left:20px;font-family:'Playfair Display',serif;font-size:8rem;color:var(--green-lt);line-height:1;pointer-events:none;font-weight:700}
+.testi-stars{color:var(--gold);font-size:.85rem;margin-bottom:12px;position:relative;z-index:1}
+.testi-txt{color:var(--text);font-size:.88rem;line-height:1.85;font-style:italic;margin-bottom:16px;position:relative;z-index:1;font-family:'Playfair Display',serif;font-weight:400}
+.testi-author{display:flex;align-items:center;gap:10px;position:relative;z-index:1}
+.testi-avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--green-lt),var(--cream3));display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:700;color:var(--green);border:1.5px solid var(--border)}
+.testi-name{font-size:.78rem;font-weight:700;color:var(--dark)}
+.testi-loc{font-size:.65rem;color:var(--muted)}
+.testi-nav{display:flex;gap:10px;justify-content:center;margin-top:28px}
+.testi-dot{width:8px;height:8px;border-radius:50%;background:var(--border2);cursor:pointer;transition:all .3s}
+.testi-dot.active{background:var(--green2);width:24px;border-radius:4px}
+.testi-arrows{display:flex;gap:10px;justify-content:center;margin-top:16px}
+.testi-arr{width:40px;height:40px;border-radius:50%;background:white;border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--muted);cursor:pointer;transition:all .2s;font-size:.85rem}
+.testi-arr:hover{background:var(--green);border-color:var(--green);color:white}
+
+/* ===================== INSTAGRAM ===================== */
+#instagram{background:white}
+.ig-inner{text-align:center;max-width:600px;margin:0 auto}
+.ig-icon{width:80px;height:80px;border-radius:22px;margin:0 auto 20px;background:linear-gradient(135deg,#f9ce34,#ee2a7b,#6228d7);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;box-shadow:0 12px 32px rgba(238,42,123,.3)}
+.ig-title{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--dark);margin-bottom:10px}
+.ig-p{color:var(--muted);font-size:.9rem;line-height:1.85;margin-bottom:28px}
+.btn-ig{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#f9ce34,#ee2a7b,#6228d7);color:white;padding:14px 32px;border-radius:50px;font-size:.78rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;transition:all .25s;box-shadow:0 6px 22px rgba(238,42,123,.35)}
+.btn-ig:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(238,42,123,.5)}
+
+/* ===================== UBICACIÓN ===================== */
+#ubicacion{background:var(--cream2)}
+.ubic-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;margin-top:48px;align-items:start}
+.map-wrap{border-radius:24px;overflow:hidden;box-shadow:0 16px 48px rgba(139,26,58,.14);border:1.5px solid var(--border);height:380px}
+.map-wrap iframe{width:100%;height:100%;border:0;display:block}
+.ubic-info h3{font-family:'Playfair Display',serif;font-size:1.6rem;font-style:italic;color:var(--dark);margin-bottom:20px}
+.ubic-item{display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-bottom:1px solid var(--border)}
+.ubic-item:last-child{border-bottom:none}
+.ui-ico{width:40px;height:40px;border-radius:12px;flex-shrink:0;background:var(--green-pale);border:1px solid rgba(139,26,58,.1);display:flex;align-items:center;justify-content:center;color:var(--green2);font-size:.9rem}
+.ui-txt strong{display:block;font-size:.8rem;color:var(--dark);font-weight:700;margin-bottom:2px}
+.ui-txt span{font-size:.78rem;color:var(--muted);line-height:1.6}
+
+/* ===================== CONTACTO ===================== */
+#contacto{background:var(--green);position:relative;overflow:hidden}
+#contacto::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(168,35,74,.3),transparent 60%),radial-gradient(ellipse at 80% 30%,rgba(139,26,58,.4),transparent 50%);pointer-events:none}
+.contacto-inner{text-align:center;max-width:640px;margin:0 auto;position:relative;z-index:1}
+.contacto-inner .sec-label{justify-content:center;color:rgba(255,255,255,.6)}
+.contacto-inner .sec-label::before{background:rgba(255,255,255,.3)}
+.contacto-inner h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.2rem);color:white;margin-bottom:14px}
+.contacto-inner h2 em{color:var(--gold2)}
+.contacto-inner p{color:rgba(255,255,255,.7);font-size:.9rem;line-height:1.9;margin-bottom:32px}
+.wa-mega{display:inline-flex;align-items:center;gap:14px;background:white;color:var(--green);padding:18px 40px;border-radius:50px;font-size:.85rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;transition:all .25s;box-shadow:0 8px 32px rgba(0,0,0,.2)}
+.wa-mega:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.wa-mega i{font-size:1.3rem;color:#25d366}
+.contact-links{display:flex;gap:16px;justify-content:center;margin-top:20px;flex-wrap:wrap}
+.cl{display:flex;align-items:center;gap:7px;color:rgba(255,255,255,.6);font-size:.78rem;transition:color .2s}
+.cl:hover{color:rgba(255,255,255,.9)}
+.cl i{font-size:.8rem}
+
+/* ===================== WA FLOAT ===================== */
+.wa-float{position:fixed;bottom:clamp(30px,5vw,46px);right:clamp(16px,4vw,26px);z-index:800;width:56px;height:56px;border-radius:50%;background:#25d366;color:white;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 4px 22px rgba(37,211,102,.5);transition:transform .2s;animation:wap 3s ease-in-out infinite}
+.wa-float:hover{transform:scale(1.1);animation:none}
+@keyframes wap{0%,100%{box-shadow:0 4px 22px rgba(37,211,102,.45),0 0 0 0 rgba(37,211,102,.2)}50%{box-shadow:0 4px 22px rgba(37,211,102,.45),0 0 0 12px rgba(37,211,102,0)}}
+.wa-tip{position:absolute;right:64px;top:50%;transform:translateY(-50%);background:var(--dark);color:white;font-size:.66rem;white-space:nowrap;padding:6px 12px;border-radius:8px;opacity:0;transition:opacity .2s;pointer-events:none}
+.wa-float:hover .wa-tip{opacity:1}
+
+/* ===================== FOOTER ===================== */
+footer{background:var(--dark);padding:56px clamp(16px,5vw,72px) 24px;position:relative;overflow:hidden}
+footer::before{content:'🌿';position:absolute;bottom:-20px;right:40px;font-size:10rem;opacity:.04}
+.ft-in{max-width:1200px;margin:0 auto;position:relative;z-index:1}
+.ft-top{display:grid;grid-template-columns:1.8fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.ft-logo{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.ft-logo img{height:44px;width:auto;object-fit:contain;filter:brightness(0) invert(1) opacity(.8)}
+.ft-brand-name{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:white}
+.ft-desc{color:rgba(255,255,255,.78);font-size:.84rem;line-height:1.9;max-width:260px;margin-bottom:16px;font-weight:400}
+.ft-socs{display:flex;gap:9px}
+.ft-soc{width:34px;height:34px;border-radius:50%;border:1px solid rgba(168,35,74,.25);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.7);font-size:.9rem;transition:all .2s}
+.ft-soc:hover{border-color:var(--green3);color:var(--green3)}
+.ft-col h4{font-family:'Caveat',cursive;font-size:1.15rem;color:var(--gold2);margin-bottom:14px;font-weight:600}
+.ft-col ul{list-style:none}
+.ft-col ul li{padding:5px 0}
+.ft-col ul li a{color:rgba(255,255,255,.72);font-size:.82rem;transition:color .2s;font-weight:400}
+.ft-col ul li a:hover{color:var(--green3)}
+.ft-bot{border-top:1px solid rgba(255,255,255,.08);padding-top:18px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:28px}
+.ft-copy{font-size:.78rem;color:rgba(255,255,255,.72);font-weight:400;text-align:center}
+.ft-copy em{color:var(--green3);font-style:normal}
+
+/* ===================== ANIMACIONES REVEAL ===================== */
+.rev{opacity:0;transform:translateY(22px);transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1)}
+.rev-l{opacity:0;transform:translateX(-22px);transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1)}
+.rev-r{opacity:0;transform:translateX(22px);transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1)}
+.rev.on,.rev-l.on,.rev-r.on{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+.d4{transition-delay:.32s}.d5{transition-delay:.4s}
+.stg>*{opacity:0;transform:translateY(16px);transition:opacity .65s cubic-bezier(.22,1,.36,1),transform .65s cubic-bezier(.22,1,.36,1)}
+.stg.on>*:nth-child(1){opacity:1;transform:none;transition-delay:.04s}
+.stg.on>*:nth-child(2){opacity:1;transform:none;transition-delay:.09s}
+.stg.on>*:nth-child(3){opacity:1;transform:none;transition-delay:.14s}
+.stg.on>*:nth-child(4){opacity:1;transform:none;transition-delay:.19s}
+.stg.on>*:nth-child(5){opacity:1;transform:none;transition-delay:.24s}
+.stg.on>*:nth-child(6){opacity:1;transform:none;transition-delay:.29s}
+.stg.on>*:nth-child(7){opacity:1;transform:none;transition-delay:.34s}
+.stg.on>*:nth-child(8){opacity:1;transform:none;transition-delay:.39s}
+.stg.on>*:nth-child(9){opacity:1;transform:none;transition-delay:.44s}
+
+/* ===================== RESPONSIVE ===================== */
+@media(max-width:1024px){
+  nav{display:none}.ham{display:flex}
+  .hero-inner{grid-template-columns:1fr;gap:40px}
+  .hero-right{display:none}
+  .nos-grid{grid-template-columns:1fr;gap:40px}
+  .pq-grid{grid-template-columns:1fr;gap:40px}
+  .pq-deco{display:none}
+  .ubic-grid{grid-template-columns:1fr}
+  .ft-top{grid-template-columns:1fr 1fr;gap:28px}
+  .prod-grid{grid-template-columns:repeat(2,1fr)}
+  .testi-card{flex:0 0 calc(50% - 10px)}
+  .galeria-grid{grid-template-columns:repeat(2,1fr)}
+  .gal-item:first-child{grid-column:1 / 3;aspect-ratio:16/7}
+  .gal-item:nth-child(6){grid-column:1 / 3;aspect-ratio:16/7}
+}
+@media(max-width:768px){
+  .hero-btns{flex-direction:column;align-items:flex-start}
+  .hero-stats{gap:16px}
+  .nos-features{grid-template-columns:1fr}
+  .ft-top{grid-template-columns:1fr}
+  .ft-bot{flex-direction:column;align-items:flex-start}
+  .prod-grid{grid-template-columns:repeat(2,1fr)}
+  .testi-card{flex:0 0 100%}
+  .galeria-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .gal-item:first-child{grid-column:1 / 3}
+  .gal-item:nth-child(6){grid-column:1 / 3}
+}
+@media(max-width:480px){
+  .prod-grid{grid-template-columns:1fr 1fr}
+  .hero-stats{flex-wrap:wrap;gap:16px}
+}
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+
+<!-- WA FLOAT -->
+<a class="wa-float" href="https://wa.me/+5493444501788?text=Hola!%20Vi%20su%20página%20y%20quiero%20consultar%20🌿" target="_blank" aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+  <span class="wa-tip">Consultá por WhatsApp</span>
+</a>
+
+<!-- MOB NAV -->
+<div class="mob-nav" id="mobNav">
+  <button class="mob-close" id="mobClose"><i class="fas fa-times"></i></button>
+  <a href="#nosotros" onclick="cn()">Nosotros</a>
+  <a href="#productos" onclick="cn()">Productos</a>
+  <a href="#galeria" onclick="cn()">Galería</a>
+  <a href="#testimonios" onclick="cn()">Reseñas</a>
+  <a href="#ubicacion" onclick="cn()">Ubicación</a>
+  <a href="#contacto" onclick="cn()">Contacto</a>
+</div>
+
+<!-- HEADER -->
+<header id="hdr">
+  <a href="#inicio" class="logo">
+    <img src="imagenes/logo.png" alt="Vida Sana Logo">
+    <div class="logo-txt">
+      <div class="logo-name">Vida Sana</div>
+      <div class="logo-sub">Almacén Natural · Gualeguay</div>
+    </div>
+  </a>
+  <nav>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#productos">Productos</a>
+    <a href="#galeria">Galería</a>
+    <a href="#testimonios">Reseñas</a>
+    <a href="#ubicacion">Ubicación</a>
+    <a href="#contacto" class="nav-cta"><i class="fab fa-whatsapp"></i> Consultar</a>
+  </nav>
+  <button class="ham" id="ham"><span></span><span></span><span></span></button>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-bg"></div>
+  <div class="hero-blob hb1"></div>
+  <div class="hero-blob hb2"></div>
+  <div class="hero-blob hb3"></div>
+
+  <div class="food-float" style="left:5%;animation-duration:14s;animation-delay:0s">🌰</div>
+  <div class="food-float" style="left:15%;animation-duration:18s;animation-delay:4s">🫘</div>
+  <div class="food-float" style="left:80%;animation-duration:16s;animation-delay:2s">🌿</div>
+  <div class="food-float" style="left:90%;animation-duration:12s;animation-delay:6s">🍃</div>
+  <div class="food-float" style="left:50%;animation-duration:20s;animation-delay:8s">✨</div>
+
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge rev"><i class="fas fa-leaf"></i> Gualeguay, Entre Ríos</div>
+      <h1 class="rev d1"><em>Vida Sana</em><br>Alimentación<br>Natural</h1>
+      <span class="hero-script rev d2">para vos y tu familia 🌿</span>
+      <p class="hero-p rev d3">Gran variedad de productos saludables, dietéticos y naturales. Atención personalizada para ayudarte a elegir lo mejor para tu bienestar.</p>
+      <div class="hero-btns rev d4">
+        <a class="btn-green" href="https://wa.me/+5493444501788?text=Hola!%20Quiero%20consultar%20sobre%20sus%20productos" target="_blank">
+          <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+        </a>
+        <a class="btn-outline" href="#productos">
+          <i class="fas fa-seedling"></i> Ver productos
+        </a>
+      </div>
+      <div class="hero-stats rev d5">
+        <div class="stat-item"><div class="stat-n">100%</div><div class="stat-l">Natural</div></div>
+        <div class="stat-item"><div class="stat-n">+200</div><div class="stat-l">Productos</div></div>
+        <div class="stat-item"><div class="stat-n">⭐ 5</div><div class="stat-l">Estrellas</div></div>
+      </div>
+    </div>
+    <div class="hero-right rev-r d2">
+      <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+      <div class="orbit orbit-2"><div class="orbit-emoji">🌿</div></div>
+      <div class="hero-logo-wrap">
+        <div class="hero-logo-ring">
+          <img src="imagenes/logo.png" alt="Vida Sana">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Divider -->
+<div class="org-div" style="background:linear-gradient(160deg,#d4b0be,#f5eaee)">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 60 Q180 0 360 30 Q540 60 720 20 Q900 0 1080 30 Q1260 60 1440 10 L1440 60 Z" fill="white"/></svg>
+</div>
+
+<!-- NOSOTROS -->
+<section class="sec" id="nosotros" style="background:white">
+  <div class="sec-inner">
+    <div class="nos-grid">
+      <div class="rev-l">
+        <div class="nos-img">
+          <div class="nos-img-main">
+            <img src="imagenes/nosotros.png" alt="Vida Sana - Almacén Natural Gualeguay" loading="lazy">
+          </div>
+          <div class="nos-badge"><div class="nb-ico">🌱</div><div class="nb-txt">Natural</div></div>
+          <div class="nos-img-card"><div class="nic-icon">⭐</div><div class="nic-n">5.0</div><div class="nic-l">Google Reviews</div></div>
+        </div>
+      </div>
+      <div class="rev-r">
+        <div class="sec-label">Quiénes somos</div>
+        <h2 class="sh">Tu almacén natural<br>de <em>confianza</em></h2>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--green);font-style:italic;margin-bottom:10px">en el corazón de Gualeguay</h3>
+        <p class="nos-desc">En <strong>Vida Sana</strong> encontrás todo lo que necesitás para llevar una alimentación saludable y natural. Somos un almacén especializado con una amplia variedad de productos naturales, dietéticos y orgánicos.</p>
+        <p class="nos-desc">Nuestro equipo está siempre dispuesto a <strong>asesorarte</strong> y ayudarte a encontrar exactamente lo que necesitás, ya sea para una dieta específica, intolerancias alimentarias o simplemente para mejorar tu bienestar.</p>
+        <div class="nos-features stg">
+          <div class="nf"><div class="nf-ico">👐</div><div class="nf-txt"><strong>Atención personalizada</strong><span>Te asesoramos en cada consulta</span></div></div>
+          <div class="nf"><div class="nf-ico">🌾</div><div class="nf-txt"><strong>Sin TACC</strong><span>Amplio stock para celíacos</span></div></div>
+          <div class="nf"><div class="nf-ico">🌱</div><div class="nf-txt"><strong>Productos veganos</strong><span>Opciones para todos</span></div></div>
+          <div class="nf"><div class="nf-ico">💚</div><div class="nf-txt"><strong>Calidad garantizada</strong><span>Solo lo mejor para vos</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Divider -->
+<div class="org-div" style="background:white">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 0 Q360 60 720 20 Q1080 0 1440 50 L1440 0 Z" fill="var(--cream2)"/></svg>
+</div>
+
+<!-- PRODUCTOS -->
+<section class="sec" id="productos" style="background:var(--cream2)">
+  <div class="sec-inner">
+    <div class="prod-intro rev">
+      <div class="sec-label">Lo que ofrecemos</div>
+      <h2 class="sh">Nuestros <em>productos</em></h2>
+      <p class="sec-p" style="margin:8px auto 0;text-align:center;max-width:520px">Gran variedad de productos naturales y saludables para cada necesidad y estilo de vida.</p>
+    </div>
+    <div class="prod-grid stg">
+      <div class="prod-card"><span class="prod-ico">🌰</span><h3>Frutos Secos</h3><p>Almendras, nueces, castañas, maníes y más. Snacks naturales llenos de energía.</p><div class="prod-tag">🌿 Natural</div></div>
+      <div class="prod-card"><span class="prod-ico">🫘</span><h3>Semillas</h3><p>Chía, lino, girasol, sésamo, zapallo. Superalimentos para tu día a día.</p><div class="prod-tag">💪 Superfood</div></div>
+      <div class="prod-card"><span class="prod-ico">🌶️</span><h3>Especias</h3><p>Condimentos naturales, hierbas aromáticas y mezclas artesanales de calidad.</p><div class="prod-tag">🍃 Aromáticas</div></div>
+      <div class="prod-card"><span class="prod-ico">🌾</span><h3>Sin Gluten (TACC)</h3><p>Amplio stock de productos aptos para celíacos. Harinas, snacks y más.</p><div class="prod-tag">✓ Sin TACC</div></div>
+      <div class="prod-card"><span class="prod-ico">🌱</span><h3>Productos Veganos</h3><p>Alternativas plant-based, proteínas vegetales y todo para una dieta vegana.</p><div class="prod-tag">💚 Vegano</div></div>
+      <div class="prod-card"><span class="prod-ico">🍞</span><h3>Harinas Naturales</h3><p>Harinas de almendra, coco, avena, arroz, garbanzo y muchas más.</p><div class="prod-tag">🌾 Variedad</div></div>
+      <div class="prod-card"><span class="prod-ico">💊</span><h3>Suplementos</h3><p>Vitaminas, minerales, proteínas y suplementos naturales para tu salud.</p><div class="prod-tag">⚡ Energía</div></div>
+      <div class="prod-card"><span class="prod-ico">🧴</span><h3>Productos Naturales</h3><p>Aceites, endulzantes naturales, superfoods y productos orgánicos seleccionados.</p><div class="prod-tag">🌟 Premium</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Divider -->
+<div class="org-div" style="background:var(--cream2)">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 60 Q360 0 720 40 Q1080 60 1440 10 L1440 60 Z" fill="white"/></svg>
+</div>
+
+<!-- POR QUÉ ELEGIRNOS -->
+<section class="sec" id="porque" style="background:white">
+  <div class="sec-inner">
+    <div class="pq-grid">
+      <div>
+        <div class="rev"><div class="sec-label">Por qué elegirnos</div><h2 class="sh">Lo que nos hace<br><em>diferentes</em></h2><p class="sec-p" style="margin-bottom:28px">En Vida Sana combinamos variedad, calidad y un trato cercano que no encontrás en otro lado.</p></div>
+        <div class="pq-cards stg">
+          <div class="pq-card"><div class="pq-ico">🌿</div><div class="pq-txt"><h4>Gran variedad de productos</h4><p>Más de 200 productos naturales, dietéticos y orgánicos siempre disponibles.</p></div></div>
+          <div class="pq-card"><div class="pq-ico">👐</div><div class="pq-txt"><h4>Atención personalizada</h4><p>Te ayudamos a encontrar el producto ideal para tus necesidades y objetivos.</p></div></div>
+          <div class="pq-card"><div class="pq-ico">✅</div><div class="pq-txt"><h4>Productos de calidad</h4><p>Seleccionamos cuidadosamente cada producto para garantizar la mejor calidad.</p></div></div>
+          <div class="pq-card"><div class="pq-ico">💰</div><div class="pq-txt"><h4>Precios accesibles</h4><p>Alimentarte saludablemente no tiene que ser caro. Tenemos opciones para todos.</p></div></div>
+          <div class="pq-card"><div class="pq-ico">🎓</div><div class="pq-txt"><h4>Asesoramiento gratuito</h4><p>Nuestro equipo te orienta para que puedas llevar una vida más saludable.</p></div></div>
+        </div>
+      </div>
+      <div class="pq-deco rev-r">
+        <div class="pq-circle">
+          <div class="pq-circle-inner">
+            <span class="pq-big-ico">🌿</span>
+            <div class="pq-circle-txt">Vida Sana</div>
+            <div class="pq-circle-sub">Almacén Natural</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Divider -->
+<div class="org-div" style="background:white">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 0 Q360 60 720 20 Q1080 0 1440 50 L1440 0 Z" fill="var(--cream)"/></svg>
+</div>
+
+<!-- ===================== GALERÍA (CON CARRUSEL ACTIVABLE) ===================== -->
+<section class="sec" id="galeria" style="background:var(--cream)">
+  <div class="sec-inner">
+    <div class="galeria-intro rev">
+      <div class="sec-label">Nuestros productos</div>
+      <h2 class="sh">Una mirada a <em>Vida Sana</em></h2>
+      <p class="sec-p">Productos frescos, naturales y de calidad. Esto es lo que te esperá cada vez que nos visitás.</p>
+    </div>
+
+    <div class="galeria-grid stg">
+      <!-- Card 1 -->
+      <div class="gal-item gal-carousel" data-images='["imagenes/galeria1.jpg","imagenes/galeria1b.jpg","imagenes/galeria1c.jpg"]'>
+        <div class="carousel-container">
+          <img class="carousel-img" src="imagenes/galeria1.jpg" alt="Productos Vida Sana" loading="lazy">
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="gal-overlay"><span>Nuestros productos</span></div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="gal-item gal-carousel" data-images='["imagenes/galeria2.jpg","imagenes/galeria2b.jpg","imagenes/galeria2c.jpg"]'>
+        <div class="carousel-container">
+          <img class="carousel-img" src="imagenes/galeria2.jpg" alt="Frutos secos y semillas" loading="lazy">
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="gal-overlay"><span>Frutos secos</span></div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="gal-item gal-carousel" data-images='["imagenes/galeria3.jpg","imagenes/galeria3b.jpg","imagenes/galeria3c.jpg"]'>
+        <div class="carousel-container">
+          <img class="carousel-img" src="imagenes/galeria3.jpg" alt="Productos naturales" loading="lazy">
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="gal-overlay"><span>Productos naturales</span></div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="gal-item gal-carousel" data-images='["imagenes/galeria4.jpg","imagenes/galeria4b.jpg","imagenes/galeria4c.jpg"]'>
+        <div class="carousel-container">
+          <img class="carousel-img" src="imagenes/galeria4.jpg" alt="Sin TACC - Celíacos" loading="lazy">
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="gal-overlay"><span>Sin TACC</span></div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="gal-item gal-carousel" data-images='["imagenes/galeria5.jpg","imagenes/galeria5b.jpg","imagenes/galeria5c.jpg"]'>
+        <div class="carousel-container">
+          <img class="carousel-img" src="imagenes/galeria5.jpg" alt="Especias y condimentos" loading="lazy">
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="gal-overlay"><span>Especias</span></div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="gal-item gal-carousel" data-images='["imagenes/galeria6.jpg","imagenes/galeria6b.jpg","imagenes/galeria6c.jpg"]'>
+        <div class="carousel-container">
+          <img class="carousel-img" src="imagenes/galeria6.jpg" alt="Almacén Vida Sana Gualeguay" loading="lazy">
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="gal-overlay"><span>Visitanos en Gualeguay</span></div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="gal-item gal-carousel" data-images='["imagenes/galeria7.jpg","imagenes/galeria7b.jpg","imagenes/galeria7c.jpg"]'>
+        <div class="carousel-container">
+          <img class="carousel-img" src="imagenes/galeria7.jpg" alt="Suplementos naturales" loading="lazy">
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="gal-overlay"><span>Suplementos</span></div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="gal-item gal-carousel" data-images='["imagenes/galeria8.jpg","imagenes/galeria8b.jpg","imagenes/galeria8c.jpg"]'>
+        <div class="carousel-container">
+          <img class="carousel-img" src="imagenes/galeria8.jpg" alt="Harinas naturales" loading="lazy">
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="gal-overlay"><span>Harinas naturales</span></div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="gal-item gal-carousel" data-images='["imagenes/galeria9.jpg","imagenes/galeria9b.jpg","imagenes/galeria9c.jpg"]'>
+        <div class="carousel-container">
+          <img class="carousel-img" src="imagenes/galeria9.jpg" alt="Más productos saludables" loading="lazy">
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="gal-overlay"><span>Mucho más</span></div>
+      </div>
+    </div>
+
+    <div class="galeria-cta rev">
+      <a class="btn-ig" href="https://www.instagram.com/vida.sana.gualeguay" target="_blank" style="margin:0 auto">
+        <i class="fab fa-instagram"></i> Ver más en Instagram
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Divider -->
+<div class="org-div" style="background:var(--cream)">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 60 Q360 0 720 40 Q1080 60 1440 10 L1440 60 Z" fill="var(--cream2)"/></svg>
+</div>
+
+<!-- TESTIMONIOS -->
+<section class="sec" id="testimonios" style="background:var(--cream2)">
+  <div class="sec-inner">
+    <div class="testi-intro rev"><div class="sec-label">Lo que dicen</div><h2 class="sh">Nuestros <em>clientes</em></h2><p class="sec-p" style="margin:8px auto 0;text-align:center">Más de 5 estrellas en Google. Esto dicen quienes nos visitan.</p></div>
+    <div class="testi-track-wrap rev d2"><div class="testi-track" id="testiTrack">
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><div class="testi-txt">"Excelente atención y gran variedad de productos. Siempre encuentro todo lo que busco y más. El equipo es muy amable y te asesora perfectamente."</div><div class="testi-author"><div class="testi-avatar">M</div><div><div class="testi-name">María G.</div><div class="testi-loc">Gualeguay ✓ Google</div></div></div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><div class="testi-txt">"Siempre te asesoran y tienen todo lo que necesitás. Es el lugar ideal para quienes buscamos productos naturales y saludables en Gualeguay."</div><div class="testi-author"><div class="testi-avatar">C</div><div><div class="testi-name">Carolina R.</div><div class="testi-loc">Gualeguay ✓ Google</div></div></div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><div class="testi-txt">"El mejor almacén natural de Gualeguay sin dudas. Tienen una variedad increíble y los precios son muy accesibles. Muy recomendado."</div><div class="testi-author"><div class="testi-avatar">L</div><div><div class="testi-name">Laura M.</div><div class="testi-loc">Gualeguay ✓ Google</div></div></div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><div class="testi-txt">"Productos de primera calidad y atención espectacular. Me ayudaron a armar una dieta saludable y siempre tienen novedades. ¡Muy recomendable!"</div><div class="testi-author"><div class="testi-avatar">A</div><div><div class="testi-name">Ana P.</div><div class="testi-loc">Gualeguay ✓ Google</div></div></div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><div class="testi-txt">"Gran variedad de productos para celíacos. Por fin un lugar en Gualeguay donde encuentro todo lo que necesito sin gluten. Atención excelente."</div><div class="testi-author"><div class="testi-avatar">S</div><div><div class="testi-name">Sofía T.</div><div class="testi-loc">Gualeguay ✓ Google</div></div></div></div>
+    </div></div>
+    <div class="testi-arrows"><div class="testi-arr" id="tPrev"><i class="fas fa-chevron-left"></i></div><div class="testi-arr" id="tNext"><i class="fas fa-chevron-right"></i></div></div>
+    <div class="testi-nav" id="testiDots"></div>
+  </div>
+</section>
+
+<!-- Divider -->
+<div class="org-div" style="background:var(--cream2)">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 60 Q360 0 720 40 Q1080 60 1440 10 L1440 60 Z" fill="white"/></svg>
+</div>
+
+<!-- INSTAGRAM -->
+<section class="sec" id="instagram" style="background:white">
+  <div class="sec-inner">
+    <div class="ig-inner rev">
+      <div class="ig-icon"><i class="fab fa-instagram"></i></div>
+      <div class="ig-title">Seguinos en Instagram</div>
+      <p class="ig-p">Mirá nuestros productos, novedades y consejos de alimentación saludable todos los días. ¡Unite a nuestra comunidad!</p>
+      <a class="btn-ig" href="https://www.instagram.com/vida.sana.gualeguay?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram"></i> Seguir en Instagram</a>
+    </div>
+  </div>
+</section>
+
+<!-- Divider -->
+<div class="org-div" style="background:white">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 0 Q360 60 720 20 Q1080 0 1440 50 L1440 0 Z" fill="var(--cream2)"/></svg>
+</div>
+
+<!-- UBICACION -->
+<section class="sec" id="ubicacion" style="background:var(--cream2)">
+  <div class="sec-inner">
+    <div class="rev" style="text-align:center;margin-bottom:0"><div class="sec-label" style="justify-content:center">Dónde estamos</div><h2 class="sh" style="text-align:center">Visitanos en <em>Gualeguay</em></h2></div>
+    <div class="ubic-grid">
+      <div class="rev-l">
+        <div class="map-wrap">
+          <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d295.27435853945184!2d-59.31281388563913!3d-33.14461047960909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b09b6022d80beb%3A0x73f82ccae49f44c8!2sVida%20Sana!5e0!3m2!1ses-419!2sar!4v1773267487360!5m2!1ses-419!2sar" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="rev-r">
+        <div class="ubic-info"><h3>Información del local</h3>
+          <div class="ubic-item"><div class="ui-ico"><i class="fas fa-map-marker-alt"></i></div><div class="ui-txt"><strong>Dirección</strong><span>San Antonio Nte. 161</span></div></div>
+          <div class="ubic-item"><div class="ui-ico"><i class="fas fa-clock"></i></div><div class="ui-txt"><strong>Horario</strong><span>Lunes a Viernes: 8:00 – 12:30 / 16:30 – 20:30<br>Sábados: 8:30 – 12:30 / 17:00 - 19:30</span></div></div>
+          <div class="ubic-item"><div class="ui-ico"><i class="fab fa-whatsapp"></i></div><div class="ui-txt"><strong>WhatsApp</strong><span>Consultas y pedidos por WhatsApp</span></div></div>
+          <div class="ubic-item"><div class="ui-ico"><i class="fab fa-instagram"></i></div><div class="ui-txt"><strong>Instagram</strong><span>@vida.sana.gualeguay · Novedades y productos</span></div></div>
+          <div style="margin-top:20px"><a class="btn-green" href="https://wa.me/+5493444501788" target="_blank" style="display:inline-flex"><i class="fab fa-whatsapp"></i> Escribinos</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="sec" id="contacto">
+  <div class="sec-inner">
+    <div class="contacto-inner rev">
+      <div class="sec-label">Contacto</div>
+      <h2>¿Querés vivir más<br><em>saludable</em>?</h2>
+      <p>Escribinos por WhatsApp y te ayudamos a encontrar los productos ideales para vos. Sin costo, con amor. 🌿</p>
+      <a class="wa-mega" href="https://wa.me/+5493444501788?text=Hola!%20Vi%20su%20página%20y%20quiero%20consultar%20sobre%20sus%20productos%20🌿" target="_blank">
+        <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+      </a>
+      <div class="contact-links">
+        <a class="cl" href="https://www.instagram.com/vida.sana.gualeguay?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram"></i> @vida.sana.gualeguay</a>
+        <span class="cl"><i class="fas fa-map-marker-alt"></i> Gualeguay, Entre Ríos</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-in">
+    <div class="ft-top">
+      <div>
+        <div class="ft-logo">
+          <img src="imagenes/logo.png" alt="Vida Sana">
+          <div class="ft-brand-name">Vida Sana</div>
+        </div>
+        <p class="ft-desc">Almacén natural en Gualeguay. Productos saludables, dietéticos y naturales con atención personalizada.</p>
+        <div class="ft-socs">
+          <a class="ft-soc" href="https://www.instagram.com/vida.sana.gualeguay?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a class="ft-soc" href="https://wa.me/+5493444501788" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a class="ft-soc" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="ft-col"><h4>Productos</h4><ul>
+        <li><a href="#productos">Frutos secos</a></li>
+        <li><a href="#productos">Semillas</a></li>
+        <li><a href="#productos">Sin TACC</a></li>
+        <li><a href="#productos">Veganos</a></li>
+        <li><a href="#productos">Suplementos</a></li>
+      </ul></div>
+      <div class="ft-col"><h4>Info</h4><ul>
+        <li><a href="#nosotros">Quiénes somos</a></li>
+        <li><a href="#porque">Por qué elegirnos</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#testimonios">Reseñas</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul></div>
+    </div>
+    <div class="ft-bot">
+      <div class="ft-copy">© 2025 <em>Vida Sana</em> · Almacén Natural · Gualeguay, Entre Ríos</div>
+      <div class="ft-copy">Diseño Web <a href="https://www.wbserviceinformatica.com.ar" target="_blank" style="color:var(--green3);transition:opacity .2s">WB Service</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// PROGRESS + HEADER
+const hdr = document.getElementById('hdr'), prog = document.getElementById('progress');
+window.addEventListener('scroll', () => {
+  const t = document.documentElement.scrollHeight - window.innerHeight;
+  prog.style.width = (window.scrollY / t * 100) + '%';
+  hdr.classList.toggle('scrolled', window.scrollY > 60);
+}, { passive:true });
+
+// MOB NAV
+const ham = document.getElementById('ham'), mn = document.getElementById('mobNav');
+ham.addEventListener('click', () => { ham.classList.toggle('open'); mn.classList.toggle('open'); document.body.style.overflow = mn.classList.contains('open') ? 'hidden' : ''; });
+document.getElementById('mobClose').addEventListener('click', cn);
+function cn() { ham.classList.remove('open'); mn.classList.remove('open'); document.body.style.overflow = ''; }
+
+// TESTIMONIOS CAROUSEL
+const track = document.getElementById('testiTrack');
+const cards = track.querySelectorAll('.testi-card');
+const dotsContainer = document.getElementById('testiDots');
+let current = 0;
+let perView = window.innerWidth > 1024 ? 3 : window.innerWidth > 768 ? 2 : 1;
+const totalSlides = Math.ceil(cards.length / perView);
+for(let i=0;i<totalSlides;i++){
+  const d = document.createElement('div');
+  d.className = 'testi-dot' + (i===0?' active':'');
+  d.addEventListener('click', () => goTo(i));
+  dotsContainer.appendChild(d);
+}
+function goTo(idx){
+  current = Math.max(0, Math.min(idx, totalSlides-1));
+  const w = track.parentElement.offsetWidth;
+  const cardW = (w - (perView-1)*20) / perView;
+  track.style.transform = `translateX(-${current * (cardW + 20) * perView}px)`;
+  dotsContainer.querySelectorAll('.testi-dot').forEach((d,i) => d.classList.toggle('active', i===current));
+}
+document.getElementById('tNext').addEventListener('click', () => goTo((current+1) % totalSlides));
+document.getElementById('tPrev').addEventListener('click', () => goTo((current-1+totalSlides) % totalSlides));
+window.addEventListener('resize', () => { perView = window.innerWidth > 1024 ? 3 : window.innerWidth > 768 ? 2 : 1; goTo(0); });
+setInterval(() => goTo((current+1) % totalSlides), 5000);
+
+// REVEAL
+const io = new IntersectionObserver(entries => entries.forEach(e => {
+  if(e.isIntersecting) e.target.classList.add('on');
+}), {threshold:.07});
+document.querySelectorAll('.rev,.rev-l,.rev-r,.stg').forEach(el => io.observe(el));
+
+// ===================== CARRUSEL PARA GALERÍA (EFECTO DIFUMINADO) =====================
+function initGaleriaCarousels() {
+  const carouselItems = document.querySelectorAll('.gal-carousel');
+  
+  carouselItems.forEach((item, idx) => {
+    const imagesData = item.dataset.images;
+    if (!imagesData) return;
+    
+    let images = [];
+    try {
+      images = JSON.parse(imagesData);
+    } catch(e) {
+      console.error('Error parsing images for carousel', idx);
+      return;
+    }
+    
+    if (!images.length) return;
+    
+    const imgElement = item.querySelector('.carousel-img');
+    const dotsContainer = item.querySelector('.carousel-dots');
+    
+    if (!imgElement || !dotsContainer) return;
+    
+    let currentImageIndex = 0;
+    let interval = null;
+    let isActive = false;
+    
+    // Crear dots
+    images.forEach((img, i) => {
+      const dot = document.createElement('div');
+      dot.classList.add('carousel-dot');
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (!isActive) return;
+        currentImageIndex = i;
+        updateImageWithBlur();
+      });
+      dotsContainer.appendChild(dot);
+    });
+    
+    function updateImageWithBlur() {
+      // Aplicar efecto difuminado
+      imgElement.classList.add('blur-transition');
+      
+      // Cambiar la imagen después de un pequeño delay (efecto suave)
+      setTimeout(() => {
+        imgElement.src = images[currentImageIndex];
+      }, 150);
+      
+      // Quitar el difuminado después de que la imagen cargó
+      setTimeout(() => {
+        imgElement.classList.remove('blur-transition');
+      }, 300);
+      
+      // Actualizar dots
+      const dots = dotsContainer.querySelectorAll('.carousel-dot');
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentImageIndex);
+      });
+    }
+    
+    function startCarousel() {
+      if (interval) clearInterval(interval);
+      interval = setInterval(() => {
+        if (isActive) {
+          currentImageIndex = (currentImageIndex + 1) % images.length;
+          updateImageWithBlur();
+        }
+      }, 3500);
+    }
+    
+    function stopCarousel() {
+      if (interval) clearInterval(interval);
+      interval = null;
+    }
+    
+    // Activar carrusel al hacer hover (o touch en móvil)
+    item.addEventListener('mouseenter', () => {
+      isActive = true;
+      startCarousel();
+    });
+    
+    item.addEventListener('mouseleave', () => {
+      isActive = false;
+      stopCarousel();
+      // Resetear a la primera imagen al salir
+      if (currentImageIndex !== 0) {
+        currentImageIndex = 0;
+        imgElement.src = images[0];
+        const dots = dotsContainer.querySelectorAll('.carousel-dot');
+        dots.forEach((dot, i) => dot.classList.toggle('active', i === 0));
+      }
+    });
+    
+    // Para dispositivos táctiles: activar al tocar
+    item.addEventListener('touchstart', () => {
+      if (!isActive) {
+        isActive = true;
+        startCarousel();
+      }
+    });
+  });
+}
+
+// Inicializar carruseles cuando el DOM esté listo
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initGaleriaCarousels);
+} else {
+  initGaleriaCarousels();
+}
+</script>
+</body>
+</html>
